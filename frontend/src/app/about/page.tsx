@@ -7,7 +7,7 @@ const SAE_AERO_INFO_TXT_1 = 'We are a student organization at the University of 
 
 const SAE_AERO_INFO_TXT_2 = 'Three four five. Six seven eight. Nine ten eleven. Twelve thirteen fourteen. Fifteen sixteen seventeen.'
 
-const CONSTITUTION_TXT = 'Here\'s our constuitution, containing SAE Aero\'s structure and bylaws.'
+const CONSTITUTION_TXT = 'Here\'s our constuitution, containing our structure and bylaws.'
 
 const AERO_TEAM_TXT = ''
 

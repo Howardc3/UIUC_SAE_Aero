@@ -27,7 +27,7 @@ export default function Home() {
         <Image src="/assets/nightowl-biplane-74556-nobg.png" alt="Plane from https://pixabay.com/photos/biplane-airplane-plane-oldtimer-74556/" width={560} height={180} className="absolute left-0 top-1/2 -translate-y-1/2 object-contain scale-x-[-1]" />
         <Image src="/assets/nightowl-biplane-74556-nobg.png" alt="Plane from https://pixabay.com/photos/biplane-airplane-plane-oldtimer-74556/" width={560} height={180} className="absolute right-0 top-1/2 -translate-y-1/2 object-contain" />
         <h2 className="text-4xl font-bold text-prussian-blue mb-4">Our Team</h2>
-        <p className="text-imperial-blue max-w-lg mb-10">
+        <p className="text-imperial-blue text-xl max-w-lg mb-10">
           Left jab right hook Counter Counter
         </p>
         <div className="flex gap-4 mb-16">

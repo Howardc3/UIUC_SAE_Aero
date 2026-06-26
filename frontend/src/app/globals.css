@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --prussian-blue: #00072d;
+  --prussian-blue: rgb(52, 69, 122);
   --deep-navy: #001c55;
   --imperial-blue: #0a2472;
   --cornflower-ocean: #0e6ba8;
@@ -24,6 +24,11 @@
   --color-afterburner: var(--afterburner);
 }
 
+/* no overscroll */
+html, body {
+  overscroll-behavior-y: none;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -38,6 +43,8 @@ nav {
   font-family: 'Times New Roman', serif;
 }
 
+
+
 /* debug: remove when done */
 /* border around all divs */
-/* * { outline: 1px solid rgba(255, 0, 0, 0.2); } */
+* { outline: 1px solid rgba(255, 0, 0, 0.2); }

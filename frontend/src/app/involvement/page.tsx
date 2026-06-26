@@ -42,7 +42,7 @@ export default function InvolvementPage() {
             Support the next generation of aerospace engineers. Your sponsorship goes directly toward building and competing.
           </p>
           <a
-            href="#"
+            href="/sponserInfo"
             target="_blank"
             rel="noopener noreferrer"
             className="self-start px-6 py-3 rounded-md bg-prussian-blue text-white font-semibold hover:bg-deep-navy transition-colors"
@@ -74,7 +74,7 @@ export default function InvolvementPage() {
       <section className="w-full flex flex-col items-center px-16 py-12 gap-4 text-center">
         <h2 className="text-2xl font-bold text-prussian-blue">Just looking to make a contribution?</h2>
         <a
-          href="#"
+          href="/goFundMe"
           target="_blank"
           rel="noopener noreferrer"
           className="px-8 py-3 rounded-md bg-afterburner text-white font-semibold hover:opacity-90 transition-opacity"
