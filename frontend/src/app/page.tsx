@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import PlaneScroll from '../../components/plane_scroll';
+import PlaneScroll from '@/components/plane_scroll';
 
-import SubBoxes from '../../components/sub_boxes';
+import SubBoxes from '@/components/sub_boxes';
 
 export default function Home() {
   return (

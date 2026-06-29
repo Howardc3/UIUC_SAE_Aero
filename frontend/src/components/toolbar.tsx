@@ -5,7 +5,9 @@ function Toolbar() {
   return (
     <nav className="w-full bg-prussian-blue px-8 py-5 flex items-center shadow-md">
       <div className="flex-1">
-        <span className="text-frosted-blue font-bold text-2xl tracking-wide">SAE Aero @ UIUC</span>
+        <a href="/">
+          <span className="text-frosted-blue font-bold text-2xl tracking-wide">SAE Aero @ UIUC</span>
+        </a>
       </div>
       <div className="flex items-center gap-1">
         <ToolbarButton href="/">Home</ToolbarButton>

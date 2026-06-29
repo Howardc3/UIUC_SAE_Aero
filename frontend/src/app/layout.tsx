@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Lustria, Source_Serif_4 } from "next/font/google";
-import Toolbar from "../../components/toolbar";
-import Footer from "../../components/footer";
+import Toolbar from "@/components/toolbar";
+import Footer from "@/components/footer";
 import "./globals.css";
 
 const lustria = Lustria({

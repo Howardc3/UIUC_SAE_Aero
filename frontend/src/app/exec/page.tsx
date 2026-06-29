@@ -1,4 +1,4 @@
-import ProfilePicture from '../../../components/profile_picture';
+import ProfilePicture from '@/components/profile_picture';
 import Image from 'next/image';
 
 function RoleCard({ name, position }: { name: string; position: string }) {
