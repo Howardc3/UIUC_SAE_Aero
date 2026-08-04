@@ -12,14 +12,15 @@ function Toolbar() {
       <div className="flex items-center gap-1">
         <ToolbarButton href="/">Home</ToolbarButton>
         <ToolbarButton href="/events">Events</ToolbarButton>
-        <DropdownButton
+        {/* <DropdownButton
           label="Projects"
           href="/projects"
           items={[
             { label: 'Current Projects', href: '/projects' },
             // { label: 'Past Projects', href: '/projects/archive' },
           ]}
-        />
+        /> */}
+        <ToolbarButton href="/projects">Projects</ToolbarButton>
         <DropdownButton
           label="About"
           href="/about"

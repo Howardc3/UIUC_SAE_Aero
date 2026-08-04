@@ -10,24 +10,23 @@ function Footer() {
 
         {/* Column 1 */}
         <div className="flex flex-col gap-2">
-          <p className="font-semibold text-prussian-blue mb-1">Projects</p>
-          <Link href="/projects" className="text-deep-navy hover:text-imperial-blue transition-colors">Current Projects</Link>
+          <Link href="/projects" className="font-semibold text-prussian-blue mb-1 hover:text-imperial-blue transition-colors">Projects</Link>
+          {/* <Link href="/projects" className="text-deep-navy hover:text-imperial-blue transition-colors">Current Projects</Link> */}
           <Link href="/events" className="text-deep-navy hover:text-imperial-blue transition-colors">Events</Link>
         </div>
 
         {/* Column 2 */}
         <div className="flex flex-col gap-2">
-          <p className="font-semibold text-prussian-blue mb-1">About</p>
-          <Link href="/about" className="text-deep-navy hover:text-imperial-blue transition-colors">About</Link>
+          <Link href="/about" className="font-semibold text-prussian-blue mb-1 hover:text-imperial-blue transition-colors">About</Link>
           <Link href="/team" className="text-deep-navy hover:text-imperial-blue transition-colors">Our Team</Link>
           <Link href="/exec" className="text-deep-navy hover:text-imperial-blue transition-colors">Executives</Link>
         </div>
 
         {/* Column 3 */}
         <div className="flex flex-col gap-2">
-          <p className="font-semibold text-prussian-blue mb-1">Involvement</p>
+          <Link href="/involvement" className="font-semibold text-prussian-blue mb-1 hover:text-imperial-blue transition-colors">Involvement</Link>
           <Link href="/recruitment" className="text-deep-navy hover:text-imperial-blue transition-colors">Recruitment</Link>
-          <Link href="/involvement" className="text-deep-navy hover:text-imperial-blue transition-colors">Sponsor Us</Link>
+          {/* <Link href="/involvement" className="text-deep-navy hover:text-imperial-blue transition-colors">Sponsor Us</Link> */}
           <Link href="/contact" className="text-deep-navy hover:text-imperial-blue transition-colors">Contact</Link>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function Home() {
         <p className="text-afterburner uppercase tracking-[0.3em] text-sm mb-4">University of Illinois Urbana-Champaign</p>
         <h1 className="text-6xl font-bold text-prussian-blue mb-6">SAE <span className="text-afterburner">Aero</span></h1>
         <p className="text-imperial-blue text-xl max-w-xl mb-10">
-          Plane Plane Plane!!! Plane plane plane
+          We design planes for the SAE Aero Design competition!
         </p>
 
         {/* Slideshow placeholder */}
@@ -30,16 +30,16 @@ export default function Home() {
         <p className="text-imperial-blue text-xl max-w-lg mb-10">
           Left jab right hook Counter Counter
         </p>
-        <div className="flex gap-4 mb-16">
+        <div className="flex gap-4 mb-8">
           <Link
             href="/recruitment"
-            className="px-8 py-3 bg-cornflower-ocean text-white font-semibold rounded-full hover:bg-imperial-blue transition-colors"
+            className="px-8 py-3 min-w-48 bg-cornflower-ocean text-white font-semibold rounded-full hover:bg-imperial-blue transition-colors"
           >
             Join Us
           </Link>
           <Link
             href="/about"
-            className="px-8 py-3 border border-imperial-blue text-imperial-blue font-semibold rounded-full hover:bg-imperial-blue hover:text-white transition-colors"
+            className="px-8 py-3 border min-w-48 border-imperial-blue text-imperial-blue font-semibold rounded-full hover:bg-imperial-blue hover:text-white transition-colors"
           >
             Learn More
           </Link>

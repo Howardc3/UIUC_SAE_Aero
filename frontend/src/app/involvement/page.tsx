@@ -45,15 +45,21 @@ export default function InvolvementPage() {
             href="/sponserInfo"
             target="_blank"
             rel="noopener noreferrer"
-            className="self-start px-6 py-3 rounded-md bg-prussian-blue text-white font-semibold hover:bg-deep-navy transition-colors"
+            className="self-start px-6 py-3 min-w-40 rounded-md bg-prussian-blue text-white font-semibold hover:bg-deep-navy transition-colors text-center"
           >
             Sponsorship Info
           </a>
-          <a
+          {/* <a
             href="mailto:saearouiuc@gmail.com"
             className="self-start px-6 py-3 rounded-md border border-prussian-blue text-prussian-blue font-semibold hover:bg-ice-blue transition-colors"
           >
             Contact: Email Us
+          </a> */}
+          <a
+            href="/contact"
+            className="self-start px-6 py-3 min-w-40 rounded-md border border-prussian-blue text-prussian-blue font-semibold hover:bg-ice-blue transition-colors text-center"
+          >
+            Contact Us
           </a>
         </div>
         <div className="w-1/2 shrink-0 flex flex-col rounded-lg border border-gray-200 bg-white p-8">
