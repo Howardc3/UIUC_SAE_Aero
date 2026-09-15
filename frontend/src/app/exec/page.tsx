@@ -1,10 +1,12 @@
 import ProfilePicture from '@/components/profile_picture';
 import Image from 'next/image';
 
-function RoleCard({ name, position, details }: { name: string; position: string; details: string }) {
+const PICS = '/assets/profile_pics'
+
+function RoleCard({ name, position, details, image }: { name: string; position: string; details: string; image?: string }) {
   return (
     <div className="flex flex-col items-center gap-1 w-36">
-      <ProfilePicture />
+      <ProfilePicture src={image} alt={name} />
       <div className="text-sm text-center w-full">
         <p className="font-semibold text-prussian-blue text-lg">{name}</p>
         <p className="text-deep-navy text-lg leading-tight">{position}</p>
@@ -32,26 +34,26 @@ export default function ExecPage() {
         <h1 className="text-4xl font-bold text-prussian-blue align-center ">2026 Executive Board</h1>
 
         {/* President */}
-        <RoleCard name="Kevin Yu" position="President" details="Mech. Engineering '28" />
+        <RoleCard name="Kevin Yu" position="President" details="Mech. Engineering '28" image={`${PICS}/Kevin_Yu.png`} />
 
-        {/* Leads row 1 */}
-        <div className="flex flex-row gap-16">
+        {/* Under-Pres Roles */}
+        <div className="flex flex-row justify-center gap-32 w-full">
           {[
-            { name: 'Jay Oh',    position: 'Structures Lead',             details: "Aero. '27" },
-            { name: 'Adler Xu', position: 'Aerodynamics Lead',                   details: "Aero. '27" },
-            { name: 'Ethan Chu', position: 'Avionics & Propulsions Lead', details: "Aero. '29" },
+            { name: 'Anjana Yaramaka', position: 'Chief Engineer', details: "Aero. '28", image: `${PICS}/Anjana_Yaramaka.jpg` },
+            { name: 'Lance Bitoy',     position: 'Business Lead',  details: "Econ. '28", image: `${PICS}/Lance_Bitoy.jpg` },
           ].map((r) => (
-            <RoleCard key={r.name} name={r.name} position={r.position} details={r.details} />
+            <RoleCard key={r.name} name={r.name} position={r.position} details={r.details} image={r.image} />
           ))}
         </div>
 
         {/* Leads row 2 */}
-        <div className="flex flex-row justify-center gap-32 w-full">
+        <div className="flex flex-row gap-16">
           {[
-            { name: 'Anjana Yaramaka', position: 'Chief Engineer', details: "Aero. '28" },
-            { name: 'Lance Bitoy',     position: 'Business Lead',  details: "Econ. '28" },
+            { name: 'Jay Oh',    position: 'Structures Lead',             details: "Aero. '27", image: `${PICS}/Jay_Oh.jpg` },
+            { name: 'Adler Xu', position: 'Aerodynamics Lead',                   details: "Aero. '27", image: `${PICS}/Adler_Xu.jpg` },
+            { name: 'Ethan Chu', position: 'Avionics & Propulsions Lead', details: "Aero. '29", image: `${PICS}/Ethan_Chu.png` },
           ].map((r) => (
-            <RoleCard key={r.name} name={r.name} position={r.position} details={r.details} />
+            <RoleCard key={r.name} name={r.name} position={r.position} details={r.details} image={r.image} />
           ))}
         </div>
 
@@ -64,11 +66,11 @@ export default function ExecPage() {
         </div>
         <div className="flex flex-row gap-12 justify-between">
           {[
-            { name: 'Raghav Agarwal',  position: 'Structures Project Lead', details: "Aero. '28" },
-            { name: 'Kayle Robertson', position: 'Structures Project Lead',  details: "Aero. '27" },
-            { name: 'Aaqil Riax',      position: 'Aerodynamics Project Lead',        details: "Aero. '29" },
+            { name: 'Raghav Agarwal',  position: 'Structures Project Lead', details: "Aero. '28", image: `${PICS}/Raghav_Agarwal.jpg` },
+            { name: 'Kayla Robertson', position: 'Structures Project Lead',  details: "Aero. '27", image: `${PICS}/Kayla_Robertson.jpg` },
+            { name: 'Aaqil Riaz',      position: 'Aerodynamics Project Lead',        details: "Aero. '29", image: `${PICS}/Aaqil_Riaz.png` },
           ].map((m) => (
-            <RoleCard key={m.name} name={m.name} position={m.position} details={m.details} />
+            <RoleCard key={m.name} name={m.name} position={m.position} details={m.details} image={m.image} />
           ))}
         </div>
       </div>

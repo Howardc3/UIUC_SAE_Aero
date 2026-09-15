@@ -3,11 +3,13 @@
 
 import Image from 'next/image';
 
-const SAE_AERO_INFO_TXT_1 = 'We are a student organization at the University of Illinois Urbana-Champaign dedicated to plane-building. We plan on participating in the SAE Aero Design competition.'
+const SAE_AERO_INFO_TXT_1 = 'We are a student organization at the University of Illinois Urbana-Champaign dedicated to plane-building. We will participate in the SAE Aero Design competition.'
 
-const SAE_AERO_INFO_TXT_2 = 'Three four five. Six seven eight. Nine ten eleven. Twelve thirteen fourteen. Fifteen sixteen seventeen.'
+const SAE_AERO_INFO_TXT_2 = ''
 
-const CONSTITUTION_TXT = 'Here\'s our constuitution, containing our structure and bylaws.'
+const CONSTITUTION_TXT = 'Our Constitution contains our club\' structure and bylaws.'
+
+const CONSTITUTION_PDF = '/assets/pdfs/doc_671287_SAESAEAero_Illinois_Constitution.pdf'
 
 const AERO_TEAM_TXT = ''
 
@@ -45,7 +47,7 @@ export default function AboutPage() {
             </a>
           </div>
           <iframe
-            src="https://static-prod-us-east-1.campusgroups.com/upload/urbanachampaign/2025/doc_671287_SAE_Aero_Illinois_Constitution_aa00e90b-a363-437f-ba3a-12b30aa1f238_1121112422.pdf"
+            src={CONSTITUTION_PDF}
             className="w-full"
             style={{ height: '800px' }}
             title="SAE Aero @ UIUC Constitution"

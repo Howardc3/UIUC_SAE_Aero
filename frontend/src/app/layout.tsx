@@ -1,19 +1,14 @@
 import type { Metadata } from "next";
-import { Lustria, Source_Serif_4 } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import Toolbar from "@/components/toolbar";
 import Footer from "@/components/footer";
 import "./globals.css";
 
-const lustria = Lustria({
-  variable: "--font-lustria",
+const ubuntu = Ubuntu({
+  variable: "--font-ubuntu",
   subsets: ["latin"],
-  weight: "400",
-});
-
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["300", "400", "500", "700"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +24,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${lustria.variable} ${sourceSerif.variable} h-full antialiased`}
+      className={`${ubuntu.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Toolbar />

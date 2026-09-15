@@ -14,8 +14,10 @@ export default function TeamPage() {
         <div className="flex flex-row gap-8 mb-6 w-full">
           <div className="flex-1 flex flex-col">
             <h1 className="text-4xl font-bold text-prussian-blue">Aerodynamics</h1>
-            <p>
-              Info about our aerodynamics team. Yay yay yay yay. Yay yay yay yay.
+            <p className="whitespace-pre-line">
+              Our team designs and analyzes the aircraft's wings, tail, and control surfaces. For this, we use the programs XFLR5 and CAD. We also test flight equipment.
+              <br></br>
+              If you join, you will learn how about airfoil and wing design, aircraft sizing, data analysis, design and software trade studies.
             </p>
 
             <p className="mt-auto text-center">
@@ -108,7 +110,7 @@ export default function TeamPage() {
           </div>
         </div>
       </section>
-
+{/* 
       <section className="w-full flex flex-col min-h-192 items-end px-16 py-12">
         <div className="flex flex-row gap-8 mb-6 w-full">
           <div className="w-1/2 shrink-0 relative">
@@ -139,7 +141,7 @@ export default function TeamPage() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
