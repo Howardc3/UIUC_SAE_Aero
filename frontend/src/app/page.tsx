@@ -28,29 +28,24 @@ export default function Home() {
       <section className="bg-ice-blue px-6 py-12">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-5">
 
-          {/* Left column: description + pictures */}
-          <div className="flex flex-col gap-6 lg:col-span-2">
-
-            {/* Description */}
-            <div className="flex-1 rounded-lg border border-imperial-blue bg-zinc-50 p-6">
-              <h2 className="text-3xl font-bold text-prussian-blue mb-4">About SAE Aero</h2>
+          {/* Left column: description */}
+          <div className="flex flex-col lg:col-span-2">
+            <h2 className="relative z-10 -mb-px self-start rounded-t-lg border border-b-1 border-imperial-blue bg-zinc-50 pl-4 pr-6 py-2 text-3xl font-bold text-prussian-blue">
+              About SAE Aero
+            </h2>
+            <div className="flex-1 rounded-b-lg rounded-tr-lg border border-imperial-blue bg-zinc-50 p-6">
               <p className="text-imperial-blue text-lg">
                 {/* TODO: description copy */}
               </p>
             </div>
-
-            {/* Misc pictures */}
-            <div className="flex-1 flex items-center justify-center rounded-lg border border-dashed border-imperial-blue bg-zinc-50 p-6 min-h-48">
-              {/* TODO: swap for a gallery / Image components */}
-              <span className="text-imperial-blue/60 text-lg">Misc pictures TBD</span>
-            </div>
-
           </div>
 
           {/* Right column: competition rules PDF */}
           <div className="flex flex-col lg:col-span-3">
-            <h2 className="text-3xl font-bold text-prussian-blue mb-4">Summarized Rules for 26-27</h2>
-            <div className="flex-1 rounded-lg overflow-hidden shadow-lg border border-imperial-blue">
+            <h2 className="relative z-10 -mb-px self-start rounded-t-lg border border-b-1 border-black bg-prussian-blue pl-4 pr-6 py-2 text-3xl font-bold text-zinc-50">
+              Summarized Rules for 26-27
+            </h2>
+            <div className="flex-1 rounded-b-lg rounded-tr-lg overflow-hidden shadow-lg border border-black">
               <div className="flex items-center justify-between bg-prussian-blue px-4 py-2">
                 <span className="text-frosted-blue text-sm font-medium"></span>
                 <a
@@ -71,6 +66,14 @@ export default function Home() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* Misc pictures */}
+      <section className="bg-ice-blue px-6 pb-12">
+        <div className="mx-auto flex min-h-64 max-w-7xl items-center justify-center rounded-lg border border-dashed border-imperial-blue bg-zinc-50 p-6">
+          {/* TODO: swap for a gallery / Image components */}
+          <span className="text-imperial-blue/60 text-lg">Misc pictures TBD</span>
         </div>
       </section>
 
@@ -101,17 +104,17 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl">
                 <SubBoxes
-                  title="Executives"
-                  body_text="Meet the current SAE Aero leads"
-                  link_text="To Execs →"
-                  href="/exec"
-                  bg="bg-zinc-50"
-                />
-                <SubBoxes
                   title="Involvement"
                   body_text="Interested in getting involved or supporting us?"
                   link_text=" Get Involved →"
                   href="/involvement"
+                  bg="bg-zinc-50"
+                />
+                <SubBoxes
+                  title="Executives"
+                  body_text="Meet the current SAE Aero leads"
+                  link_text="To Execs →"
+                  href="/exec"
                   bg="bg-zinc-50"
                 />
               </div>

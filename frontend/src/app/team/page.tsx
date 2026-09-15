@@ -12,16 +12,22 @@ export default function TeamPage() {
 
       <section className="w-full flex flex-col min-h-192 items-start px-16 py-12">
         <div className="flex flex-row gap-8 mb-6 w-full">
-          <div className="flex-1 flex flex-col">
+          <div className="flex-1 flex flex-col bg-white rounded-2xl shadow-md ring-1 ring-prussian-blue/10 p-12">
             <h1 className="text-4xl font-bold text-prussian-blue">Aerodynamics</h1>
             <p className="whitespace-pre-line">
-              Our team designs and analyzes the aircraft's wings, tail, and control surfaces. For this, we use the programs XFLR5 and CAD. We also test flight equipment.
+              The aerodynamics team keeps our aircraft in the air efficiently and steadily. Responsible for designing and optimizing our aircraft's aerodynamic characteristics, we ensure the plane has the performance and control to meet and exceed mission requirements.
               <br></br>
+              <br></br>
+               Aerodynamics focuses on analyzing and designing aero aspects of the plane, such as the wings, airfoil, control surfaces, and stabilizers. Through modeling, simulation, and verification, we can make data driven and validated decisions for our plane, and integrate these decisions with the other teams.
+               <br></br>
+               <br></br>
               If you join, you will learn how about airfoil and wing design, aircraft sizing, data analysis, design and software trade studies.
             </p>
 
             <p className="mt-auto text-center">
               Aerodynamics Leads
+              <br></br>
+              Adler Xu, Aaqil
             </p>
           </div>
           <div className="w-1/2 shrink-0 relative">
@@ -67,10 +73,10 @@ export default function TeamPage() {
               Image from Matias_Luge
             </a>
           </div>
-          <div className="flex-1 flex flex-col">
+          <div className="flex-1 flex flex-col bg-white rounded-2xl shadow-md ring-1 ring-prussian-blue/10 p-12">
             <h1 className="text-4xl font-bold text-prussian-blue">Structures</h1>
             <p>
-              Info about our structures team. Yay yay yay yay. Yay yay yay yay.
+              Structures designs and builds the aircraft’s structural components. We ensure the plane is capable of enduring the loads the aircraft experiences during flight.
             </p>
             <p className="mt-auto text-center">
               Structures Leads
@@ -81,7 +87,7 @@ export default function TeamPage() {
 
       <section className="w-full flex flex-col min-h-192 items-start px-16 py-12">
         <div className="flex flex-row gap-8 mb-6 w-full">
-          <div className="flex-1 flex flex-col">
+          <div className="flex-1 flex flex-col bg-white rounded-2xl shadow-md ring-1 ring-prussian-blue/10 p-12">
             <h1 className="text-4xl font-bold text-prussian-blue">Avionics</h1>
             <p>
               Info about our avionics team. Yay yay yay yay. Yay yay yay yay.
@@ -110,7 +116,7 @@ export default function TeamPage() {
           </div>
         </div>
       </section>
-{/* 
+
       <section className="w-full flex flex-col min-h-192 items-end px-16 py-12">
         <div className="flex flex-row gap-8 mb-6 w-full">
           <div className="w-1/2 shrink-0 relative">
@@ -131,7 +137,7 @@ export default function TeamPage() {
               Image from publicdomainpictures
             </a>
           </div>
-          <div className="flex-1 flex flex-col">
+          <div className="flex-1 flex flex-col bg-white rounded-2xl shadow-md ring-1 ring-prussian-blue/10 p-12">
             <h1 className="text-4xl font-bold text-prussian-blue">Business</h1>
             <p>
               Info about our business team. Yay yay yay yay. Yay yay yay yay.
@@ -141,7 +147,7 @@ export default function TeamPage() {
             </p>
           </div>
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }
