@@ -4,8 +4,8 @@ Monorepo for the SAE Aero Design club website at the University of Illinois Urba
 
 | Folder | What it is |
 | --- | --- |
-| [`frontend/`](frontend) | The website — Next.js 16 + React 19 + Tailwind v4. **Start here.** |
-| [`backend/`](backend) | A FastAPI + Firebase/Firestore API. Not used by the site yet. |
+| [`frontend/`](frontend) | The website — Next.js 16 + React 19 + Tailwind v4. Our project exists here! |
+| [`backend/`](backend) | A FastAPI + Firebase/Firestore API. Not necessary, is just useless boilerplate right now. Don't bother working with this.|
 
 ## Run the website locally
 
@@ -20,7 +20,7 @@ Open <http://localhost:3000>. Requires Node.js 20.9+.
 Full instructions, project layout, and troubleshooting live in
 [frontend/README.md](frontend/README.md).
 
-## Run the backend (optional)
+## Run the backend - SKIP THIS STEP. OUR WEBSITE DOESN'T NEED A BACKEND.
 
 The website doesn't call the API yet, so you only need this if you're working on the API itself.
 
